@@ -1,0 +1,36 @@
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  top: 0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#no-mobile span {
+  margin-bottom: 100px;
+}
+
+/* @media screen and (max-width: 650px) {
+  #no-mobile {
+    display: none;
+  }
+} #no-mobile{display:flex}로 바꿔줄시 사용가능*/
+
+@media screen and (min-width: 650px), (orientation: landscape) {
+  #no-mobile {
+    display: flex;
+  }
+}
+/* 
+@media screen and (orientation: landscape) {
+  #no-mobile {
+    display: flex;
+  }
+}  */
